@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Ground Pangolin | ConservationStation</title>
+<link rel="stylesheet" href="css/penguin-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/> 
+
+<!-- styling to adjust for Bootstrap format changes - page will look ugly without it or remove Bootstrap -->
+<style>
+
+h1 {
+font-size: 28px;
+display: inline-block;
+margin-left: 50px;
+margin-bottom: -25px;
+color: #65CA00;
+text-shadow: 1.2px 1px #38383DE6;
+}
+
+h2 {
+font-size: 25px;
+display: inline-block;
+margin-left: 55px;
+margin-top: -5px;
+}
+
+footer {
+display: block;
+}
+
+.nav-internal {
+left: 39rem;
+}
+
+.nav-internal a {
+text-decoration: none;
+}
+
+.pic-container, .picturebox, section {
+border: none;
+}
+
+@media all and (min-width: 600px){
+
+ h1 {
+ font-size: 30px;
+ }
+
+ h2 {
+ font-size: 26px;
+ }
+
+}
+
+@media all and (min-width: 900px){
+
+ h1 {
+ font-size: 32px;
+ }
+
+ h2 {
+ font-size: 27px;
+ }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="widenav">
+
+<div class="nav-internal">
+
+  <a href="index.html" class="navbutton">Home</a>
+
+ <div class="dropdown">
+  <button class="dropbtn">Species &#9660;</button>
+  <div class="dropdown-content">
+       <a href="african-penguin.html">African Penguin</a>
+       <a href="knysna-seahorse.html">Knysna Seahorse</a>
+       <a href="ground-pangolin.html">Ground Pangolin</a>
+       <a href="velddrif-bellbush.html">Velddrif Bellbush</a>
+  </div>
+</div> 
+
+  <a href="volunteer.html" class="navbutton">Volunteer</a>
+
+  <a href="explore.html" class="navbutton">Explore</a>
+
+</div>
+
+<h1>ConservationStation</h1>
+<br>
+<h2>South Africa</h2>
+<div class="header-icon"><a href="index.html"><img src="img/za-flag-crop.jpg" alt="South Africa icon"></a></div>
+
+</div>
+
+<div class="mobinav">
+
+   <h1>ConservationStation</h1><br><h2>South Africa</h2> <div class="header-icon"><img src="img/za-flag-crop.jpg" alt="South Africa icon"></div>
+   
+ <div id="navmenu">
+     <a href="index.html">Home</a>
+
+ <div class="drop-container">
+    <button class="drop-button" id="drop-button-mobi" onclick="dropMenuMobi()">Species
+      <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="drop-menu" id="drop-mobi">
+       <a href="african-penguin.html">African Penguin</a>
+       <a href="knysna-seahorse.html">Knysna Seahorse</a>
+       <a href="ground-pangolin.html">Ground Pangolin</a>
+       <a href="velddrif-bellbush.html">Velddrif Bellbush</a>
+     </div>
+   </div>
+     <a href="volunteer.html">Volunteer</a>
+     <a href="explore.html">Explore</a>
+ </div>
+
+<!--hamburger menu!-->
+ <a href="javascript: void(0);" class="icon" onclick="hamburger()">
+   <i class="fa fa-bars"></i>
+ </a>
+
+</div>
+
+</header>
+
+<div class="pic-container">
+ <div class="picturebox" id="ap-2"><img src="img/pangolin-ball.jpg" alt="Pangolin curled into a ball"></div>
+ <div class="picturebox" id="ap-1"><img src="img/pangolin-face.jpg" alt="Pangolin closeup"></div>
+ <div class="picturebox" id="ap-3"><img src="img/pangolin-baby.JPG" alt="Pangolin mother with baby"></div>
+</div>
+
+<section>
+<h3>Ground Pangolin</h3>
+<p><b>Scientific name: <i>Smutsia teminckii</i></b></p>
+<p><b>Status: Vulnerable</b></p>
+
+<p>The Ground pangolin, also known as the Temminck's pangolin, is a scaled mammal found across much of Africa. Adult pangolins may be 30-160 centimetres long from head to tail. They have a heavy tail that provides sufficient balance to allow them to walk on two legs, with their clawed forelegs held underneath them. They use their large claws to break open ant and termite mounds in order to lick up the termites with their extremely long tongues. When threatened, pangolins curl up into a scaly ball.</p>
+<h3>Threats to the Ground Pangolin</h3>
+<p>Ground pangolins are threatened by fragmentation of their habitat caused by humans cultivating large portions of formerly wild land for farming. Their numbers are also in decline due to illegal trafficking. In parts of Asia and Africa, pangolin meat is eaten as a delicacy, and their blood, scales and other body parts are believed by some to have medicinal properties. Pangolins are the world's most trafficked mammal.</p>
+<h3>What you can do to help</h3>
+<p>Pangolins are not well-known animals despite being very widespread and unique in appearance. Raise awareness about pangolins and the threats they face in any way you can. Support farming and landuse that does not encroach on or negatively affect wild animal habitat.</p>
+<p>To take part in an active effort to reintroduce the Ground pangolin in its original habitat, contact the travel organisation <b>&Beyond</b> which offers a <a href="https://www.andbeyond.com/experiences/africa/south-africa/kwazulu-natal/phinda-private-game-reserve/pangolin-conservation-experience/">Pangolin conservation experience in Kwa-Zulu Natal</a>, South Africa. </p>
+<p>To donate to pangolin conservation, visit the <b>Save Pangolins</b> website at <a href="https://www.savepangolins.org" target="_blank">savepangolins.org</a></p>
+<br>
+</section>
+
+<script>
+function hamburger() {
+   var x = document.getElementById("navmenu");
+   if (x.style.display === "flex") {
+      x.style.display = "none";
+   } else {
+     x.style.display = "flex";
+
+   }
+}
+
+function dropMenuWide() {
+  document.getElementById("drop-wide").classList.toggle("show-wide");
+}
+
+function dropMenuMobi() {
+  document.getElementById("drop-mobi").classList.toggle("show-mobi");
+}
+
+</script>
+
+<footer>
+&nbsp;ConservationStation South Africa 2020-2021
+</footer>
+
+</body>
+
+</html>
