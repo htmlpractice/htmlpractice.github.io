@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Volunteer | ConservationStation</title>
+<link rel="stylesheet" href="css/penguin-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/> 
+
+<!-- styling to adjust for Bootstrap format changes - page will look ugly without it or remove Bootstrap -->
+<style>
+
+h1 {
+font-size: 28px;
+display: inline-block;
+margin-left: 50px;
+margin-bottom: -25px;
+color: #65CA00;
+text-shadow: 1.2px 1px #38383DE6;
+}
+
+h2 {
+font-size: 25px;
+display: inline-block;
+margin-left: 55px;
+margin-top: -5px;
+}
+
+footer {
+display: block;
+}
+
+.nav-internal {
+left: 39rem;
+}
+
+.nav-internal a {
+text-decoration: none;
+}
+
+.pic-container, .picturebox, section {
+border: none;
+}
+
+@media all and (min-width: 600px){
+
+ h1 {
+ font-size: 30px;
+ }
+
+ h2 {
+ font-size: 26px;
+ }
+
+}
+
+@media all and (min-width: 900px){
+
+ h1 {
+ font-size: 32px;
+ }
+
+ h2 {
+ font-size: 27px;
+ }
+
+}
+
+</style>
+
+</head>
+
+<header>
+
+<div class="widenav">
+
+<div class="nav-internal">
+
+  <a href="index.html" class="navbutton">Home</a>
+
+ <div class="dropdown">
+  <button class="dropbtn">Species &#9660;</button>
+  <div class="dropdown-content">
+       <a href="african-penguin.html">African Penguin</a>
+       <a href="knysna-seahorse.html">Knysna Seahorse</a>
+       <a href="ground-pangolin.html">Ground Pangolin</a>
+       <a href="velddrif-bellbush.html">Velddrif Bellbush</a>
+  </div>
+</div> 
+
+  <a href="volunteer.html" class="navbutton">Volunteer</a>
+
+  <a href="explore.html" class="navbutton">Explore</a>
+
+</div>
+
+<h1>ConservationStation</h1>
+<br>
+<h2>South Africa</h2>
+<div class="header-icon"><a href="index.html"><img src="img/za-flag-crop.jpg" alt="South Africa icon"></a></div>
+
+</div>
+
+<div class="mobinav">
+
+   <h1>ConservationStation</h1><br><h2>South Africa</h2> <div class="header-icon"><img src="img/za-flag-crop.jpg" alt="South Africa icon"></div></a> 
+   
+ <div id="navmenu">
+     <a href="index.html">Home</a>
+
+ <div class="drop-container">
+    <button class="drop-button" id="drop-button-mobi" onclick="dropMenuMobi()">Species
+      <i class="fa fa-caret-down"></i>
+     </button>
+     <div class="drop-menu" id="drop-mobi">
+       <a href="african-penguin.html">African Penguin</a>
+       <a href="knysna-seahorse.html">Knysna Seahorse</a>
+       <a href="ground-pangolin.html">Ground Pangolin</a>
+       <a href="velddrif-bellbush.html">Velddrif Bellbush</a>
+     </div>
+   </div>
+     <a href="volunteer.html">Volunteer</a>
+     <a href="explore.html">Explore</a>
+ </div>
+
+<!--hamburger menu!-->
+ <a href="javascript: void(0);" class="icon" onclick="hamburger()">
+   <i class="fa fa-bars"></i>
+ </a>
+ </div>
+</div>
+
+</div>
+
+</header>
+
+<body>
+
+<section style="margin-left: 5px;">
+<h1 style="margin-left: -0.1px; color: #000000;">Volunteering in South Africa</h1>
+<h3>* Penguin & Seabird Rehabilitation</h3>
+<p><b>SANCCOB</b>, the <b>Southern African Foundation for the Conservation of Coastal Birds</b>, rehabilitates penguins and seabirds harmed by human activities and helps to maintain healthy penguin colonies. <a href="https://sanccob.co.za/volunteer/" target="_blank">Volunteer opportunities for local and international residents</a> are open year-round at their centre in Cape Town, Western Cape. Training and internships are also offered.</p>
+<h3>* Environmental Education</h3>
+<p><b>Cape Town Environmental Education Trust (CTEET)</b> facilitates a number of conservation and community education projects in the Cape Town area. <a href="https://cteet.co.za/support/">Unique volunteering opportunities</a> are available to local and international residents.</p>
+<h3>* Pangolin Reintroduction Project</h3>
+<p>To take part in an active effort to reintroduce the Ground pangolin in its original habitat, contact travel organisation <b>&Beyond</b> which offers a <a href="https://www.andbeyond.com/experiences/africa/south-africa/kwazulu-natal/phinda-private-game-reserve/pangolin-conservation-experience/">Pangolin conservation experience in Kwa-Zulu Natal</a>. </p>
+<br>
+&nbsp;
+<br>
+</section>
+
+<script>
+function hamburger() {
+   var x = document.getElementById("navmenu");
+   if (x.style.display === "flex") {
+      x.style.display = "none";
+   } else {
+     x.style.display = "flex";
+
+   }
+}
+
+function dropMenuWide() {
+  document.getElementById("drop-wide").classList.toggle("show-wide");
+}
+
+function dropMenuMobi() {
+  document.getElementById("drop-mobi").classList.toggle("show-mobi");
+}
+
+</script>
+
+</body>
+
+<footer>
+&nbsp;ConservationStation South Africa 2020-2021
+</footer>
+
+</html>
